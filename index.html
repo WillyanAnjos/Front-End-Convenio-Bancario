@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convênio</title>
+    <!--CSS Local-->
+    <link rel="stylesheet" href="./style/style.css">
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--JS Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+
+
+</head>
+
+<body>
+    <div class="pagina">
+        <h5>Configuração de <strong>Convênios</strong></h5>
+        <p style="font-size: 13px;">Aqui você irá configurar os convênios bancários para emitir boletos bancários</p>
+
+        <!--Menus de cim-->
+        <div id="botoes">
+            <div class="item_inicio">
+                <h1>1</h1>
+                <h3>Início</h3>
+            </div>
+            <div class="item_dados">
+                <h1>2</h1>
+                <h3>Dados</h3>
+            </div>
+            <div class="item_boleto">
+                <h1>3</h1>
+                <h3>Boleto</h3>
+            </div>
+            <div class="item_retorno">
+                <h1>4</h1>
+                <h3>Retorno</h3>
+            </div>
+            <div class="item_fim">
+                <h1>5</h1>
+                <h3>Fim</h3>
+            </div>
+        </div>
+
+        <!--Tela INICIO-->
+        <div id="tela_Inicio">
+            <div id="container">
+                <div id="card_inicio">
+                    <div id="perg1">
+                        <p>Você possui um convênio para emissão de boletos ao seu banco?</p>
+                        <hr style="background-color: orange; width: 50px; margin: 1px;">
+                        <br>
+
+                        <div style="display: grid;">
+                            <div>
+                                <input type="radio" name="#1" id="perg1_sim">
+                                <label>Sim</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="#1" id="perg1_não">
+                                <label>Não</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="perg2">
+                        <p>Este convênio é para emissão de boletos <strong>sem registro</strong>?</p>
+                        <hr style="background-color: orange; width: 50px; margin: 1px;">
+                        <br>
+
+                        <div style="display: grid;">
+                            <div>
+                                <input type="radio" name="#2" id="perg2_sim">
+                                <label>Sim</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="#2" id="perg2_nao">
+                                <label>Não</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div id="perg3">
+                        <p>Responda as seguintes perguntas</p>
+                        <hr style="background-color: orange; width: 50px; margin: 1px;">
+                        <br>
+                        <div>
+                            <div style="display: flex;">
+                                <input type="checkbox" name="check" id="check1" style="margin:10px;"
+                                    aria-label="Radio button for following text input">
+                                <label for="campo"
+                                    style="max-width:100%;overflow:hidden; text-overflow: ellipsis; ">Lorem
+                                    ipsum
+                                    dolor sit amet, consectetur adipiscing elit.
+                                    Aliquam eget dolor dictum orci hendrerit finibus.
+                                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus.
+                                    Maecenas arcu risus, porttitor auctor ipsum ut, rhoncus pellentesque ipsum. Proin
+                                    efficitur
+                                    magna ipsum, in interdum arcu lobortis sed. Nulla facilisi. Vivamus ac nisl
+                                    tincidunt,</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <div style="display: flex;">
+                                <input type="checkbox" name="check" id="check2" style="margin:10px;"
+                                    aria-label="Radio button for following text input">
+                                <label for="campo"
+                                    style="max-width:100%;overflow:hidden; text-overflow: ellipsis; ">Lorem
+                                    ipsum
+                                    dolor sit amet, consectetur adipiscing elit.
+                                    Aliquam eget dolor dictum orci hendrerit finibus.
+                                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus.
+                                    Maecenas arcu risus, porttitor auctor ipsum ut, rhoncus pellentesque ipsum. Proin
+                                    efficitur
+                                    magna ipsum, in interdum arcu lobortis sed. Nulla facilisi. Vivamus ac nisl
+                                    tincidunt,</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <div style="display: flex;">
+                                <input type="checkbox" name="check" id="check3" style="margin:10px;"
+                                    aria-label="Radio button for following text input">
+                                <label for="campo"
+                                    style="max-width:100%;overflow:hidden; text-overflow: ellipsis; ">Lorem
+                                    ipsum
+                                    dolor sit amet, consectetur adipiscing elit.
+                                    Aliquam eget dolor dictum orci hendrerit finibus.
+                                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus.
+                                    Maecenas arcu risus, porttitor auctor ipsum ut, rhoncus pellentesque ipsum. Proin
+                                    efficitur
+                                    magna ipsum, in interdum arcu lobortis sed. Nulla facilisi. Vivamus ac nisl
+                                    tincidunt,</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card_direita">
+                    <div id="mensagem_alert">
+                        <div id="mensagem">
+                            <p>Entre em contato com seu banco e solicite o seu convênio de emissão de boletos
+                                <strong>SEM REGISTRO.</strong>
+                                Verifique com o seu gerente.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <button class="btn btn-success" id="btn_prox_inicio"
+                style="float: right;border-radius: 0%; width: 120px;">PRÓXIMO</button>
+            <br>
+        </div>
+
+        <!--Tela DADOS-->
+
+        <div id="tela_Dados">
+            <div id="dado_perg1">
+                <br>
+                <p>Clique no banco em que você ou sua empresa <strong>possuem um convênio</strong>:</p>
+                <hr style="background-color: orange; width: 50px; margin: 1px;">
+                <br>
+                <div id="cards">
+                    <div id="c_esquerda">
+                        <div class="card_dado">
+                            <div id="coluna">
+                                <label><strong>Nome: </strong> FastSoluções</label><br>
+                                <label><strong>Conta: </strong> 12345-6</label><br>
+                                <label><strong>Agência: </strong> 123.456-8</label>
+                            </div>
+                            <div id="coluna">
+                                <img src="./imgs/itau.png" width="74px" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="card_dado">
+                            <div id="coluna">
+                                <label><strong>Nome: </strong> FastSoluções</label><br>
+                                <label><strong>Conta: </strong> 12345-6</label><br>
+                                <label><strong>Agência: </strong> 123.456-8</label>
+                            </div>
+                            <div id="coluna">
+                                <img src="./imgs/bradesco.png" width="74px" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="c_direita">
+                        <div class="card_dado">
+                            <div id="coluna">
+                                <label><strong>Nome: </strong> FastSoluções</label><br>
+                                <label><strong>Conta: </strong> 12345-6</label><br>
+                                <label><strong>Agência: </strong> 123.456-8</label>
+                            </div>
+                            <div id="coluna">
+                                <img src="./imgs/itau.png" width="74px" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="card_dado">
+                            <div id="coluna">
+                                <label><strong>Nome: </strong> FastSoluções</label><br>
+                                <label><strong>Conta: </strong> 12345-6</label><br>
+                                <label><strong>Agência: </strong> 123.456-8</label><br>
+                                <label>Status: <label style="color: #f24444;">Falta informar Agência e
+                                        Conta</label></label>
+                            </div>
+                            <div id="coluna">
+                                <img src="./imgs/bradesco.png" width="74px" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="button" class="btn btn-primary" value="+ ADICIONAR NOVO BANCO">
+            </div>
+
+            <div id="dado_perg2">
+                <br>
+                <p>Dados do convênio: </p>
+                <hr style="background-color: orange; width: 50px; margin: 1px;">
+                <br>
+
+                <form action="#">
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control" name="" placeholder="Nome" id="nome">
+                        </div>
+                        <div class="form-group col-md-2" style="margin-left: 20px;">
+                            <input type="text" class="form-control" name="agencia" placeholder="Agência" id="agencia">
+                        </div>
+                        <div class="form-group col-md-1" style="margin-left: 20px;">
+                            <input type="number" class="form-control" name="dv" placeholder="DV" id="dv">
+                        </div>
+                        <div class="form-group col-md-2.6" style="margin-left: 20px;">
+                            <input type="number" class="form-control" name="conta" placeholder="Conta" id="conta">
+                        </div>
+                        <div class="form-group col-md-1" style="margin-left: 20px;">
+                            <input type="number" class="form-control" name="dv" placeholder="DV" id="dv">
+                        </div>
+                    </div>
+
+                    <!--*****************************-->
+
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <select name="n_carteira" class="form-control" id="n_carteira">
+                                <option value="numero">Número da Carteira</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3" style="margin-left: 20px;">
+                            <input type="text" id="n_convenio" class="form-control"
+                                aria-describedby="passwordHelpBlock">
+                            <small class="form-text text-muted">
+                                Insira número referente ao seu convênio
+                            </small>
+                        </div>
+                    </div>
+                    <!--*****************************-->
+
+                    <br>
+                    <p>Dados do cedente: <label style="font-size: 13px; color: slategray;">(quem emite a cobrança; ou
+                            seja, aquele que irá receber a quantia cobrada) </label> </p>
+                    <hr style="background-color: orange; width: 50px; margin: 1px;">
+                    <br>
+
+                    <!--*****************************-->
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <input type="text" name="" id="txt_nome" class="form-control" placeholder="Nome">
+                        </div>
+                        <div class="form-group col-md-3" style="margin-left: 20px;">
+                            <input type="text" name="" id="txt_cpf" class="form-control"
+                                placeholder="CPF/CNPJ do cedente">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <input type="text" name="" id="txt_ende" class="form-control" placeholder="Endereço">
+                        </div>
+                        <div class="form-group col-md-3" style="margin-left: 20px;">
+                            <input type="text" name="" id="txt_complem" class="form-control" placeholder="Complemento">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <input type="text" name="" id="txt_nume" placeholder="Número" class="form-control">
+                        </div>
+                        <div class="form-group col-md-3" style="margin-left: 20px;">
+                            <input type="text" name="" id="txt_bairro" placeholder="Bairro" class="form-control">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <input type="text" name="" id="txt_cep" placeholder="CEP" class="form-control">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <select name="uf" id="uf" class="form-control">
+                                <option>UF</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <select name="Cidade" id="cidade" class="form-control">
+                                <option>Cidade</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <button id="btn_proximo_Dados" class="btn btn-success"
+                        style="float: right; margin-right: 10px; width: 120px; border-radius: 0px;"> PRÓXIMO </button>
+                    <br>
+                </form>
+            </div>
+        </div>
+
+        <!--Tela BOLETO-->
+        <div id="tela_Boleto">
+            <br>
+            <p>Gerar Boleto teste  <label style="font-size: 13px; color: slategray;">( Essa etapa é importante para poder validar se os dados estão corretos)</label> </p>
+            <hr style="background-color: orange; width: 50px; margin: 1px;">
+            <br>
+
+            <div id="conteudo">
+                <img src="./imgs/boleto.png" width="100px"><br>
+                <input type="button" class="btn" id="btn_emitir" value="EMITIR BOLETO TESTE">
+                <small class="form-text text-muted" style="text-align: center;">
+                    (Essa etapa pode ser pulada)
+                </small>
+            </div>
+            <div id="conteudo2">
+                <input type="button" class="btn btn-success" id="btn_Proximo_Boleto" value="PRÓXIMO">
+
+            </div>
+        </div>
+
+        <!--Tela RETORNO-->
+        <div id="tela_Retorno">
+            <br>
+            <p>Arquivo de Retorno: <label style="font-size: 13px; color: slategray;">(Esse arquivo você deve solicitar ao seu gerente)</label> </p>
+            <hr style="background-color: orange; width: 50px; margin: 1px;">
+            <br>
+
+            <div id="conteudo">
+                <img src="./imgs/boleto2.png" width="100px"><br>
+                <input type="button" class="btn btn-outline-info" id="btn_retorno_arquivo" value="ARQUIVO DE RETORNO">
+                <small class="form-text text-muted" style="text-align: center;">
+                    (Essa etapa pode ser pulada)
+                </small>
+            </div>
+            <div id="conteudo2">
+                <input type="button" class="btn btn-success" id="btn_Proximo_Retorno" value="PRÓXIMO">
+
+            </div>
+        </div>
+
+        <!--Tela RETORNO ERRO-->
+        <div id="tela_Erro_Retorno">
+            <br>
+            <p>Arquivo de Retorno: (Esse arquivo você deve solicitar ao seu gerente)</p>
+            <hr style="background-color: orange; width: 50px; margin: 1px;">
+            <br>
+
+            <div id="conteudo">
+                <img src="./imgs/boletoErro.png" width="150px"><br>
+                <label style="text-align:center;">ALGO DEU <strong style="color:#f24444;">ERRADO</strong> NÃO
+                    IDENTIFICAMOS BOLETO TESTE GERADO</label>
+                <div class="form-row">
+                    <div class="form-group col-md-7">
+                        <input type="button" class="btn btn-outline-info" id="btn_erro_retorno_alterar"
+                            value="Alterar Arquivo">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="button" class="btn btn-outline-danger" id="btn_erro_retorno_conven"
+                            value="Editar Convênio?">
+                    </div>
+                </div>
+            </div>
+            <div id="conteudo2">
+                <input type="button" class="btn btn-success" id="btn_Proximo_Retorno" value="PRÓXIMO">
+
+            </div>
+        </div>
+
+        <!--Tela RETORNO OK-->
+        <div id="tela_Ok_Retorno">
+            <br>
+            <p>Arquivo de Retorno: (Esse arquivo você deve solicitar ao seu gerente)</p>
+            <hr style="background-color: orange; width: 50px; margin: 1px;">
+            <br>
+
+            <div id="conteudo">
+                <img src="./imgs/boletoCerto.png" width="150px"><br>
+                <label style="text-align:center;">ESTÁ TUDO <strong style="color:#00a2ff;">CERTO</strong> IDENTIFICAMOS
+                    O BOLETO TESTE GERADO.</label>
+            </div>
+            <div id="conteudo2">
+                <input type="button" class="btn btn-success" id="btn_Ok_Retorno" value="PRÓXIMO">
+
+            </div>
+        </div>
+
+        <!--Tela Tudo Ok-->
+        <div id="tela_Ok">
+            <div id="conteudo">
+                <img src="./imgs/tudook.png"><br>
+                <label>CONFIGURAÇÃO REALIZADA COM <strong style="color: springgreen;">SUCESSO</strong></label>
+                <small class="form-text text-muted" style="text-align: center;">
+                    (Essa etapa pode ser pulada)
+                </small>
+            </div>
+        </div>
+
+        <!--Tela Fim-->
+        <div id="tela_Fim">
+            <br>
+            <p style="width: 400px;">Você já configurou um convênio bancário para emitir boletos, mas pode configurar
+                outros.</p>
+            <hr style="background-color: orange; width: 60px; margin: 1px; height: 5px;">
+            <br>
+            <div class="form-row">
+                <div class="form-group col-md-7">
+                    <div class="card_dado">
+                        <div id="coluna">
+                            <label><strong>Nome: </strong> FastSoluções</label><br>
+                            <label><strong>Conta: </strong> 12345-6</label><br>
+                            <label><strong>Agência: </strong> 123.456-8</label>
+                        </div>
+                        <div style="width: 63%; margin-left: 30px;">
+                            <img src="./imgs/itau.png" width="74px" alt="" srcset="">
+                        </div>
+                        <div style="width: 30px;margin-right: 90px;">
+                            <img src="./imgs/lixo.png" width="20px">
+                            <img src="./imgs/edit.png" width="20px">
+                        </div>
+                    </div>
+                    <div class="card_dado">
+                        <div id="coluna">
+                            <label><strong>Nome: </strong> FastSoluções</label><br>
+                            <label><strong>Conta: </strong> 12345-6</label><br>
+                            <label><strong>Agência: </strong> 123.456-8</label>
+                        </div>
+                        <div id="coluna">
+                            <img src="./imgs/bradesco.png" width="74px" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="card_dado">
+                        <div id="coluna">
+                            <label><strong>Nome: </strong> FastSoluções</label><br>
+                            <label><strong>Conta: </strong> 12345-6</label><br>
+                            <label><strong>Agência: </strong> 123.456-8</label>
+                        </div>
+                        <div id="coluna">
+                            <img src="./imgs/bradesco.png" width="74px" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <img src="./imgs/documento.png" style="margin: 30%;">
+                </div>
+            </div>
+            <br>
+            <div>
+                <input type="button" class="btn btn-primary" id="btn_adicionar_novo_convenio" value="ADICIONAR">
+            </div>
+        </div>
+
+        <!--Tela Configurar-->
+        <div id="tela_Configurar">
+            <br>
+            <p style="width: 400px;">Você ainda não configurou os seus convênios bancários para poder emitir boletos</p>
+            <hr style="background-color: orange; width: 60px; margin: 1px; height: 5px;">
+            <br>
+            <div class="form-row">
+                <div class="form-group col-md-7">
+                    <div>
+                        <input type="button" class="btn btn-primary" id="btn_configurar" value="CONFIGURAR AGORA">
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <img src="./imgs/documento.png" style="margin: 30%;">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+
+    <!--Js Local-->
+    <script src="./js/funcoes.js"></script>
+
+    <!--JS Bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+
+
+</body>
+
+</html>
